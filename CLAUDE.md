@@ -1,1 +1,28 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 @AGENTS.md
+
+## Project Overview
+
+Linkit — a Next.js 16 application using the App Router, React 19, Tailwind CSS v4, and TypeScript.
+
+## Commands
+
+- `npm run dev` — start dev server (localhost:3000)
+- `npm run build` — production build
+- `npm run start` — serve production build
+- `npm run lint` — run ESLint (flat config, core-web-vitals + typescript)
+
+## Architecture
+
+- **App Router** with `src/app/` directory structure
+- **Path alias**: `@/*` maps to `./src/*`
+- **Styling**: Tailwind CSS v4 via `@tailwindcss/postcss`; theme tokens defined in `src/app/globals.css` using `@theme inline`
+- **Fonts**: Geist Sans and Geist Mono loaded via `next/font/google`, exposed as CSS variables `--font-geist-sans` / `--font-geist-mono`
+- **Layout types**: Next.js 16 uses `LayoutProps<"/">` for the root layout's children prop type (not `{ children: React.ReactNode }`)
+
+## Key Differences (Next.js 16)
+
+This project runs Next.js 16 which has breaking changes from earlier versions. Before writing Next.js code, read the guide at `node_modules/next/dist/docs/` — do not rely on training data for API conventions.
