@@ -36,6 +36,7 @@ Whenever a new file is created in `/docs`, add it to the **Project Docs** sectio
 - `docs/design-system.md` — Token layer: colours, type, spacing, radius, shadows, motion, breakpoints. Read before styling any component.
 - `docs/ui.md` — Component specs: variants, states, props, accessibility, layout patterns. Read before building or modifying a UI component.
 - `docs/architecture.md` — Rendering model, directory structure, naming conventions, data flow. Read before adding folders, files, or new patterns.
+- `docs/database.md` — MongoDB + Mongoose setup: connection caching, schema conventions, user scoping, query rules. Read before writing models or database queries.
 
 ## AGENTS.md
 
