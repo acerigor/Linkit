@@ -37,6 +37,11 @@ Whenever a new file is created in `/docs`, add it to the **Project Docs** sectio
 - `docs/ui.md` — Component specs: variants, states, props, accessibility, layout patterns. Read before building or modifying a UI component.
 - `docs/architecture.md` — Rendering model, directory structure, naming conventions, data flow. Read before adding folders, files, or new patterns.
 - `docs/database.md` — MongoDB + Mongoose setup: connection caching, schema conventions, user scoping, query rules. Read before writing models or database queries.
+- `docs/auth.md` — NextAuth setup: route protection, session handling, ownership checks. Read before touching sign-in, sessions, or access control.
+- `docs/coding-standards.md` — TypeScript strict mode, Prettier/ESLint, import order, component patterns, async rules. Read before writing or reviewing code.
+- `docs/routing.md` — Route map, route groups, directory layout, boundary rules, Server Actions vs Route Handlers. Read before adding routes or API endpoints.
+- `docs/errors-and-validation.md` — Zod validation at the Server Action boundary, typed result objects for field errors, error boundaries. Read before writing Server Actions or form handling.
+- `docs/data-fetching.md` — Server Component data loading, user/handle scoping, caching with tags, Client Component data flow. Read before loading data in pages or components.
 
 ## AGENTS.md
 
