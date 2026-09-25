@@ -42,6 +42,8 @@ Whenever a new file is created in `/docs`, add it to the **Project Docs** sectio
 - `docs/routing.md` — Route map, route groups, directory layout, boundary rules, Server Actions vs Route Handlers. Read before adding routes or API endpoints.
 - `docs/errors-and-validation.md` — Zod validation at the Server Action boundary, typed result objects for field errors, error boundaries. Read before writing Server Actions or form handling.
 - `docs/data-fetching.md` — Server Component data loading, user/handle scoping, caching with tags, Client Component data flow. Read before loading data in pages or components.
+- `docs/security.md` — Secrets, security headers, rate limiting, user-generated content handling. Read before managing env vars, configuring headers, or rendering user input.
+- `docs/git-conventions.md` — Conventional Commits, branch naming, PR workflow. Read before committing, branching, or opening pull requests.
 
 ## AGENTS.md
 
