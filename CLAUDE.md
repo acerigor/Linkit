@@ -23,6 +23,12 @@ Linkit — a Next.js 16 application using the App Router, React 19, Tailwind CSS
 - **Fonts**: Geist Sans and Geist Mono loaded via `next/font/google`, exposed as CSS variables `--font-geist-sans` / `--font-geist-mono`
 - **Layout types**: Next.js 16 uses `LayoutProps<"/">` for the root layout's children prop type (not `{ children: React.ReactNode }`)
 
+## Live Docs (Context7)
+
+Before writing code that uses Next.js, Mongoose, NextAuth, Zod, or any other third-party library, framework, or SDK, pull current documentation through Context7 first. Do not rely on training data for API signatures, configuration, or version-specific behavior — even for libraries you think you know well.
+
+Workflow: call `mcp__context7__resolve-library-id` to find the library, then `mcp__context7__query-docs` for the specific API or topic. If Context7 has no entry for a library, state that explicitly before proceeding from training-data knowledge.
+
 ## Key Differences (Next.js 16)
 
 This project runs Next.js 16 which has breaking changes from earlier versions. Before writing Next.js code, read the guide at `node_modules/next/dist/docs/index.md` — do not rely on training data for API conventions.
@@ -44,6 +50,7 @@ Whenever a new file is created in `/docs`, add it to the **Project Docs** sectio
 - `docs/data-fetching.md` — Server Component data loading, user/handle scoping, caching with tags, Client Component data flow. Read before loading data in pages or components.
 - `docs/security.md` — Secrets, security headers, rate limiting, user-generated content handling. Read before managing env vars, configuring headers, or rendering user input.
 - `docs/git-conventions.md` — Conventional Commits, branch naming, PR workflow. Read before committing, branching, or opening pull requests.
+- `docs/testing.md` — Vitest unit tests for pure functions and Zod schemas, Playwright MCP QA via the run-qa-suite skill, separate test database. Read before writing tests or adding test tooling.
 
 ## AGENTS.md
 
